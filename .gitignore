@@ -1,0 +1,17 @@
+# Downloaded and cleaned dataset files. Notebooks and HTML reports stay tracked.
+dataset_catalog/analysis/**/data/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Python environments and bytecode
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store

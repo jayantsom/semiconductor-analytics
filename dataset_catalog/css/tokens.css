@@ -1,0 +1,47 @@
+:root {
+  --paper: #ffffff;
+  --ink: #161616;
+  --muted: #5e5e5e;
+  --faint: #8a8a8a;
+  --line: #e4e4e4;
+  --serif: Georgia, "Iowan Old Style", "Palatino Linotype", Palatino, serif;
+  --sans: "Segoe UI", system-ui, sans-serif;
+  --content: 1180px;
+  --cat: #161616;
+  --cat-soft: #f4f4f4;
+}
+
+[data-category="wafer-maps"] { --cat: #1d4e89; --cat-soft: #e8f0f8; }
+[data-category="process-engineering"] { --cat: #0f6e6e; --cat-soft: #e5f3f3; }
+[data-category="metrology"] { --cat: #8a5a12; --cat-soft: #f8f1e4; }
+[data-category="inspection"] { --cat: #9b3d55; --cat-soft: #f8ebee; }
+[data-category="electrical-testing"] { --cat: #5c4d9a; --cat-soft: #f0eef8; }
+[data-category="equipment-health"] { --cat: #3d5a80; --cat-soft: #eaf0f6; }
+[data-category="yield-analytics"] { --cat: #2f6b3a; --cat-soft: #e8f3ea; }
+[data-category="fdc-apc"] { --cat: #0e7490; --cat-soft: #e6f4f8; }
+[data-category="iot"] { --cat: #1565c0; --cat-soft: #e7f0fa; }
+[data-category="hypothesis-testing"] { --cat: #6d4c7d; --cat-soft: #f3eef5; }
+[data-category="computer-vision"] { --cat: #b45309; --cat-soft: #f8efe6; }
+[data-category="factory-systems"] { --cat: #6b3f2a; --cat-soft: #f6eee9; }
+
+:root[data-theme="dark"] {
+  --paper: #121212;
+  --ink: #f3f3f3;
+  --muted: #c8c8c8;
+  --faint: #9a9a9a;
+  --line: #333333;
+  color-scheme: dark;
+}
+
+:root[data-theme="dark"] [data-category="wafer-maps"] { --cat: #9ec0ea; --cat-soft: #1a2836; }
+:root[data-theme="dark"] [data-category="process-engineering"] { --cat: #7ecfcf; --cat-soft: #163030; }
+:root[data-theme="dark"] [data-category="metrology"] { --cat: #e0b56a; --cat-soft: #2c2416; }
+:root[data-theme="dark"] [data-category="inspection"] { --cat: #e7a0b0; --cat-soft: #321820; }
+:root[data-theme="dark"] [data-category="electrical-testing"] { --cat: #c4b6ef; --cat-soft: #241f36; }
+:root[data-theme="dark"] [data-category="equipment-health"] { --cat: #a9c4de; --cat-soft: #1a2430; }
+:root[data-theme="dark"] [data-category="yield-analytics"] { --cat: #9dcea6; --cat-soft: #18281c; }
+:root[data-theme="dark"] [data-category="fdc-apc"] { --cat: #7ec8dc; --cat-soft: #142830; }
+:root[data-theme="dark"] [data-category="iot"] { --cat: #8eb6ef; --cat-soft: #162436; }
+:root[data-theme="dark"] [data-category="hypothesis-testing"] { --cat: #d2b3de; --cat-soft: #2a2030; }
+:root[data-theme="dark"] [data-category="computer-vision"] { --cat: #f0b27a; --cat-soft: #2e2216; }
+:root[data-theme="dark"] [data-category="factory-systems"] { --cat: #d7b5a4; --cat-soft: #2a211c; }

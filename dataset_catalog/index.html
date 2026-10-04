@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Semiconductor Dataset Catalog</title>
+    <link rel="stylesheet" href="css/tokens.css">
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="top-bar">
+        <button type="button" class="text-button" id="home">Home</button>
+        <button type="button" class="text-button" id="theme" aria-pressed="false">Dark mode</button>
+      </div>
+      <p class="eyebrow">Dataset directory</p>
+      <h1>Semiconductor Dataset Catalog</h1>
+      <div class="subtitle-row">
+        <p class="subtitle">A catalog of 64 free datasets across 12 categories, from wafer maps and fab process to IoT, test, yield, and factory systems.</p>
+        <p class="count" id="total-count">64 datasets</p>
+      </div>
+      <div class="tabs" id="tabs" role="tablist" aria-label="Subcategories"></div>
+      <div class="filter-bar">
+        <form class="search" role="search">
+          <label class="sr-only" for="search">Search datasets or tags</label>
+          <input id="search" type="search" placeholder="Search datasets or tags" autocomplete="off">
+        </form>
+        <button type="button" class="clear-filter" id="clear-filter">Clear filter</button>
+      </div>
+      <p id="empty" class="empty" hidden>No datasets match that search.</p>
+    </header>
+    <main id="directory"></main>
+    <div id="modal" class="modal" hidden>
+      <button type="button" class="modal-backdrop" id="modal-backdrop" aria-label="Close dataset details"></button>
+      <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal-top">
+          <p class="card-code" id="modal-code"></p>
+          <button type="button" class="modal-close" id="modal-close">Close</button>
+        </div>
+        <h2 id="modal-title"></h2>
+        <p class="modal-meta" id="modal-meta"></p>
+        <h3>Tags</h3>
+        <ul class="tag-list" id="modal-tags"></ul>
+        <h3>What it contains</h3>
+        <p id="modal-contents"></p>
+        <h3>Main use</h3>
+        <p id="modal-use"></p>
+        <p class="modal-access" id="modal-access"></p>
+        <a class="modal-source" id="modal-source" hidden target="_blank" rel="noopener noreferrer">Open source →</a>
+      </div>
+    </div>
+    <footer class="site-footer">
+      <p>Descriptions summarize public sources and may be incomplete. Check the original publisher for access and license terms before use.</p>
+      <p>Author: Jayant Som</p>
+    </footer>
+    <script src="scripts/catalog.js"></script>
+    <script src="scripts/app.js"></script>
+  </body>
+</html>
